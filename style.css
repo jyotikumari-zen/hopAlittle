@@ -1,0 +1,38 @@
+body{
+     background: url('Cartoon-Nature-Background-clipart-Sky-Nature-Tree-.png');
+     background-size: 14.25in 7in;
+}
+
+.wrapper{
+     border: 5px solid white;
+     top: 50%;
+     left: 50%;
+     position: absolute;
+     width: 600px;
+     height: 600px;
+     transform: translate(-50%, -50%);
+     background: url('background.png');
+     animation-name: change;
+     animation-duration: 2s;
+     animation-iteration-count: infinite;    
+}
+
+canvas{
+     position: absolute;
+     top: 0%;
+     left: 0%;
+     width: 100%;
+     height: 100%;
+}
+
+
+
+@keyframes change {
+     from{
+          box-shadow: 10px 10px 10px blue;
+     }
+
+     to{
+          box-shadow: 10px 10px 10px yellow;
+     }
+}
